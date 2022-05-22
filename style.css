@@ -41,10 +41,12 @@
 .header-middle{
 display:flex;
 flex:0.7;
+width:900px;
 align-items:center;
 background-color: whitesmoke;
 padding:10px;
 border-radius:10px;
+margin-left:68px
 }
   .header-middle input{
 border:none;
@@ -86,13 +88,15 @@ background-color: transparent;
     align-content: start;
     gap: 0.5rem;
     padding: 1rem;
-    overflow: scroll;
+    border-right: 2px solid whitesmoke;
     align-items: center;
 }
 
 
+
 button{
     border-radius: 24px;
+    place-items:center;
     justify-content: center;
     color: #d93025;
     height: 48px;
@@ -101,6 +105,12 @@ button{
     margin: 16px 0 16px 0;
 }
 
+    
+    
+.main{
+    border-right: 3px solid whitesmoke;
+    padding-top: 15px;
+}
 
 .emailRow-options{
     display:flex;
@@ -114,14 +124,11 @@ button{
     align-items: center;
     height:50px;
     border-bottom: 2px solid whitesmoke;
-    cursor:pointer;
     z-index:999;
 }
 
    
-.emailRow-options .material-symbols-outlined,input{
-margin:5px;
-}
+
 
 
 .emailRow__message{
@@ -129,6 +136,7 @@ margin:5px;
     flex:1;
     align-items: center;
     font-size:15px;
+    
 }
 
 
@@ -140,7 +148,7 @@ margin:5px;
 
 .emailRow__tittle{
     font-size:13px;
-    flex:0.3;
+    flex:0.2;
 }
 
 
@@ -170,6 +178,7 @@ margin:5px;
 
 p {
     margin-bottom: 10px;
+    margin-left:0;
 
 }
 
@@ -184,12 +193,14 @@ p {
 
 .but button {
     border-color: white;
-    color: rgb(39, 39, 155);
+    color: rgb(69, 69, 238);
     width: 20vw;
     align-content: start;
     background-color: white;
     font-weight: bold;
-
+border-radius:1px;
 
 }
- 
+ hr{
+     width:100vw;
+ }
