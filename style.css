@@ -1,0 +1,195 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template:
+        'header header header' 50px
+        'left-menu main right-menu' 1fr/
+        280px 900px 200px;
+
+    gap: 0.5em;
+
+
+}
+
+.header {
+
+    background-color:white; 
+    grid-area: header;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    gap: 4.5em;
+    
+    
+    
+    }
+    .header-left{
+        display: flex;
+        align-items: center;
+    }
+.header-middle{
+display:flex;
+flex:0.7;
+align-items:center;
+background-color: whitesmoke;
+padding:10px;
+border-radius:10px;
+}
+  .header-middle input{
+border:none;
+padding:10px;
+outline:none;
+font-size: medium;
+background-color: transparent;
+
+  }
+
+    .header-left img{
+        object-fit:contain;
+        height:80px;
+        margin-left:5px;
+    }
+
+    
+    
+
+    .header-right{
+        object-fit:contain;
+        margin:0px 0px 10px 470px;
+        place-items:center;
+    
+    }
+
+   
+
+    
+
+
+
+
+
+.left-menu  {
+    background-color: white;
+    grid-area: left-menu;
+    display: grid;
+    align-content: start;
+    gap: 0.5rem;
+    padding: 1rem;
+    overflow: scroll;
+    align-items: center;
+}
+
+
+button{
+    border-radius: 24px;
+    justify-content: center;
+    color: #d93025;
+    height: 48px;
+    padding: 10 24px 20px 30px;
+    min-width: 96px;
+    margin: 16px 0 16px 0;
+}
+
+
+.emailRow-options{
+    display:flex;
+    align-items: center;
+}
+.emailRow__options .material-symbols-outlined,input{
+    margin:5px;
+}
+.emailRow{
+    display:flex;
+    align-items: center;
+    height:50px;
+    border-bottom: 2px solid whitesmoke;
+    cursor:pointer;
+    z-index:999;
+}
+
+   
+.emailRow-options .material-symbols-outlined,input{
+margin:5px;
+}
+
+
+.emailRow__message{
+    display: flex;
+    flex:1;
+    align-items: center;
+    font-size:15px;
+}
+
+
+.emailRow__message h4{
+    width:400px;
+    padding-left:5px;
+    padding-right: 5px;
+}
+
+.emailRow__tittle{
+    font-size:13px;
+    flex:0.3;
+}
+
+
+
+
+.right-menu {
+    background-color: white;
+    grid-area: right-menu;
+
+}
+
+.gmail {
+    margin-left: 15px;
+}
+
+.button {
+    height: 30px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 8px 0px 0px 15px;
+}
+
+.list {
+    margin-left: 70px;
+    padding: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+
+}
+
+.right-menu {
+    display: grid;
+    align-content: start;
+    margin-bottom: 10px;
+    gap: 0.5rem;
+    padding: 1rem;
+
+}
+
+.but button {
+    border-color: white;
+    color: rgb(39, 39, 155);
+    width: 20vw;
+    align-content: start;
+    background-color: white;
+    font-weight: bold;
+
+
+}
+ 
